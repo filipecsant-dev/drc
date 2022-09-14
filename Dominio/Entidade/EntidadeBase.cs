@@ -11,6 +11,6 @@ namespace Dominio.Entidade
     {
         [Key]
         public int Id { get; set; }
-        public bool ATIVO { get; set; }
+        public bool Ativo { get; set; }
     }
 }

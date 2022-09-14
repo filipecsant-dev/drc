@@ -1,0 +1,17 @@
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dados.deps.json
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dados.runtimeconfig.json
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dados.dll
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dados.pdb
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dominio.dll
+C:\Users\Filipe\source\repos\drc\Dados\bin\Debug\net6.0\Dominio.pdb
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.csproj.AssemblyReference.cache
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.AssemblyInfoInputs.cache
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.AssemblyInfo.cs
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.csproj.CopyComplete
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.dll
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\refint\Dados.dll
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.pdb
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\Dados.genruntimeconfig.cache
+C:\Users\Filipe\source\repos\drc\Dados\obj\Debug\net6.0\ref\Dados.dll

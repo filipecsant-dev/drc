@@ -1,6 +1,6 @@
 ﻿using Dados.Repositorio.Context;
-using Dados.Repositorio.Interfaces;
 using Dominio.Entidade;
+using Dominio.Servico.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -38,7 +38,7 @@ namespace Dados.Repositorio
             {
                 var query = _context.Set<TEntity>();
                 if (query.Any())
-                    return query.ToList().Where(x => x.ATIVO == true);
+                    return query.ToList().Where(x => x.Ativo == true);
                 return new List<TEntity>();
             }
             catch (Exception e)
@@ -66,7 +66,7 @@ namespace Dados.Repositorio
         {
             try
             {
-                entityToDelete.ATIVO = false;
+                entityToDelete.Ativo = false;
                 Update(entityToDelete);
             }
             catch (Exception e)

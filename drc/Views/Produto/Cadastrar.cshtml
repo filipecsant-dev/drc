@@ -1,0 +1,100 @@
+﻿@model drc.Models.ProdutoVM
+@{
+    ViewData["Title"] = "Cadastrar Produto";
+}
+
+<style>
+    #formContent {
+        max-width: none;
+        width: 80%;
+    }
+
+    input {
+        box-shadow: 0px 2px 5px 1px #d7d7d7;
+    }
+
+    select {
+        box-shadow: 0px 2px 5px 1px #d7d7d7;
+    }
+
+    hr {
+        height: 2px;
+        background: black;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    }
+
+
+
+    .text-danger {
+        margin-top: 10px;
+        float: left;
+        font-size: 12px;
+        margin-left: 11%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .validation {
+        float: left;
+    }
+
+    label {
+        margin-left: 6%;
+    }
+</style>
+
+<link rel="stylesheet" href="~/css/cadastro.css" />
+
+    @using (Html.BeginForm(FormMethod.Post, new { @name="Cadastro" }))
+    {
+        <div class="panel">
+        <div class="col-md-12">
+            <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Cadastro de Produto</h1>
+        </div>
+
+            @Html.TextBoxFor(model => model.Nome, new { @class = "fadeIn second", @placeholder="Nome do produto"})
+
+            <br />
+            <br />
+            <input type="text" name="Valor_Compra" id="Valor_Compra" class="" placeholder="Valor de Compra" onkeypress="$(this).mask('#.##0,00', {reverse: true});" />
+
+            <br />
+            <br />
+            <input type="text" name="Valor_Venda" id="Valor_Venda" class="" placeholder="Valor de Venda" onkeypress="$(this).mask('#.##0,00', {reverse: true});" />
+
+            <br />
+            <br />
+            <select name="CategoriaID" id="categoriaID" class="fadeIn second">
+                <option value="0" selected>- Selecione a categoria -</option>
+                @foreach (var c in ViewBag.Categoria)
+                {
+                    <option value="@c.Id">@c.Nome</option>
+                }
+                
+            </select>
+
+        <br />
+        @Html.ValidationMessageFor(model => model.UnidadeMedidaID, "", new { @class="text-danger"})
+        <br />
+        <select name="UnidadeMedidaID" id="unidadeID" class="fadeIn second">
+            <option value="0" selected>- Selecione a unidade de medida -</option>
+            @foreach (var u in ViewBag.UnidadeMedida)
+            {
+                <option value="@u.Id">@u.Nome</option>
+            }
+
+        </select>
+        </div>
+            
+
+
+        <input type="submit" class="fadeIn fourth" id="valida" data-tipo="produtos" value="Cadastrar Produto" style="width:80%; margin-left:10%;">
+    }
+
+
+@section scripts{
+    <script src="~/js/produto.js"></script>
+}

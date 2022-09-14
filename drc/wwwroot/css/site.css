@@ -1,18 +1,84 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+header {
+    background-color: #2196f3;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    min-height: 10vh;
+}
+
+#navbarheader {
+    min-height: 10vh;
+}
+
+.mobile-menu div {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-header-line1-add {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    transition: 0.4s;
+}
+
+.btn-header-line2-add {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.btn-header-line3-add {
+    transform: rotate(45deg) translate(-3px, -4px);
+    transition: 0.4s;
+}
+
+.btn-header-line1-remove {
+    transform: rotate(0) translate(0px, 0px);
+    transition: 0.4s;
+}
+
+.btn-header-line2-remove {
+    opacity: 100;
+    transition: 0.4s;
+}
+
+.text-danger {
+    font-size: 13px;
+    text-align: left;
+}
+
+footer {
+    background: #ffab62;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 5px;
+}
+
+.containerbody {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    height: 70vh;
 }

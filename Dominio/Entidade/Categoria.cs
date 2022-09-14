@@ -12,6 +12,6 @@ namespace Dominio.Entidade
         public string Descricao { get; set; }
         public DateTime Data_Cadastro { get; set; }
         public DateTime Data_Alteracao { get; set; }
-        public int Status { get; set; }
+        public bool Status { get; set; }
     }
 }

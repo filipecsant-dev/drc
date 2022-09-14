@@ -1,0 +1,83 @@
+﻿@model IEnumerable<drc.Models.ProdutoVM>
+
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div id="page1">
+
+    <a class="btn btn-success" asp-controller="Produto" asp-action="Cadastrar" style="float:right;margin-bottom:30px;">Cadastrar Produto <i class="bi bi-check"></i></a>
+    <br />
+    <div class="col-md-12">
+        <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Produtos</h1>
+    </div>
+    <br />
+
+
+
+    <table id="table" class="display">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Unidade Medida</th>
+                <th style="text-align:right;">Ações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Nome</td>
+                    <td>@p.Categoria.Nome</td>
+                    <td>@p.UnidadeMedida.Nome</td>
+                    <td>
+                        <a class="btn btn-danger excluir" data-id="@p.Id" data-tipo="produtos" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
+                        <a class="btn btn-warning" asp-controller="Produto" asp-action="Editar" asp-route-id="@p.Id" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->
+                        <a class="btn btn-primary visu" data-id="@p.Id" data-tipo="produtos" style="float:right; color: #fff;"><i class="bi bi-eye"></i></a><!--Visualizar-->
+                
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="page2" style="display:none;">
+    <div>
+        <a class="btn btn-primary" id="voltar" style="float:right;margin-bottom:30px; color: #fff;"><i class="bi bi-arrow-return-left"></i></a>
+    </div>
+
+    <div class="conteudo" style="font-size: 18px; margin-top: 5vh;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Valor de Compra</th>
+                    <th>Valor de Venda</th>
+                    <th>Categoria</th>
+                    <th>Unidade de Medida</th>
+                    <th>Data de Cadastro</th>
+                    <th>Última Alteração</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td id="Prod_Nome"></td>
+                   <td id="Prod_Valor_Compra"></td>
+                   <td id="Prod_Valor_Venda"></td>
+                   <td id="Prod_Categoria"></td>
+                   <td id="Prod_Unidade_Medida"></td>
+                   <td id="Prod_Data_Cadastro"></td>
+                   <td id="Prod_Data_Alteracao"></td>
+                   <td id="Prod_Status"></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/produto.js"></script>
+}

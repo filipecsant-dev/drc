@@ -1,0 +1,79 @@
+﻿@model drc.Models.CategoriaVM
+@{
+    ViewData["Title"] = "Cadastrar Categoria";
+}
+
+<style>
+    #formContent {
+        max-width: none;
+        width: 80%;
+    }
+
+    input {
+        box-shadow: 0px 2px 5px 1px #d7d7d7;
+    }
+
+    select {
+        box-shadow: 0px 2px 5px 1px #d7d7d7;
+    }
+
+    hr {
+        height: 2px;
+        background: black;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    }
+
+
+
+    .text-danger {
+        margin-top: 10px;
+        float: left;
+        font-size: 12px;
+        margin-left: 11%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .validation {
+        float: left;
+    }
+
+    label {
+        margin-left: 6%;
+    }
+</style>
+
+<link rel="stylesheet" href="~/css/cadastro.css" />
+
+    @using (Html.BeginForm(FormMethod.Post, new { @name="Cadastro" }))
+    {
+        <div class="panel">
+        <div class="col-md-12">
+            <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Cadastro de Categoria</h1>
+        </div>
+
+            @Html.TextBoxFor(model => model.Nome, new { @class = "fadeIn second", @placeholder="Nome do Categoria"})
+
+            <br />
+            <br />
+            @Html.TextBoxFor(model => model.Descricao, new { @class = "fadeIn second", @placeholder="Descrição da Categoria"})
+
+            <br />
+            <br />
+
+        <br />
+        <br />
+        </div>
+            
+
+
+        <input type="submit" class="fadeIn fourth" id="valida" value="Cadastrar Categoria" style="width:80%; margin-left:10%;">
+    }
+
+
+@section scripts{
+    <script src="~/js/categoria.js"></script>
+}

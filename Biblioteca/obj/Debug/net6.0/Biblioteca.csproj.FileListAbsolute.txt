@@ -1,0 +1,14 @@
+C:\Users\Filipe\source\repos\drc\Biblioteca\bin\Debug\net6.0\Biblioteca.deps.json
+C:\Users\Filipe\source\repos\drc\Biblioteca\bin\Debug\net6.0\Biblioteca.runtimeconfig.json
+C:\Users\Filipe\source\repos\drc\Biblioteca\bin\Debug\net6.0\Biblioteca.dll
+C:\Users\Filipe\source\repos\drc\Biblioteca\bin\Debug\net6.0\Biblioteca.pdb
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.dll
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\refint\Biblioteca.dll
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.pdb
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\Biblioteca.genruntimeconfig.cache
+C:\Users\Filipe\source\repos\drc\Biblioteca\obj\Debug\net6.0\ref\Biblioteca.dll
